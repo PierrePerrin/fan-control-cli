@@ -22,18 +22,29 @@ A fast, lightweight, and modern macOS CLI utility and Swift library for monitori
 
 ---
 
-## 📦 Installation & Build
+## 📦 Installation
 
-### Prerequisites
-- macOS 12.0+ (Monterey, Ventura, Sonoma, Sequoia+)
-- Xcode Command Line Tools (`xcode-select --install`) or Swift 5.9+
+### Option 1: Via Homebrew (Recommended)
 
-### Build from Source
+Install directly via Homebrew from this repository:
+
+```bash
+# Tap and install
+brew install --HEAD PierrePerrin/fan-control.app/fancontrol
+
+# Or tap first:
+brew tap PierrePerrin/fan-control.app
+brew install fancontrol
+```
+
+### Option 2: Build from Source
+
+**Prerequisites**: macOS 12.0+ & Xcode Command Line Tools (`xcode-select --install`) or Swift 5.9+.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/fan-control.git
-cd fan-control
+git clone https://github.com/PierrePerrin/fan-control.app.git
+cd fan-control.app
 
 # Build release executable
 swift build -c release
