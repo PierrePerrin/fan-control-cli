@@ -2,6 +2,10 @@
 
 A fast, lightweight, and modern macOS CLI utility and Swift library for monitoring thermal sensors and controlling fan speeds on Apple Silicon and Intel Macs.
 
+<p align="center">
+  <img src="assets/demo.gif" alt="fancontrol demo" width="750">
+</p>
+
 ---
 
 ## ✨ Features
