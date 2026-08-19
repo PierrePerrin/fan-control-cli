@@ -30,11 +30,8 @@ Install directly via Homebrew from this repository:
 
 ```bash
 # Tap and install
-brew install --HEAD PierrePerrin/fan-control-cli/fan-control-cli
-
-# Or tap first:
-brew tap PierrePerrin/fan-control-cli
-brew install fan-control-cli
+brew tap PierrePerrin/fancontrol https://github.com/PierrePerrin/fan-control-cli.git
+brew install fancontrol
 ```
 
 ### Option 2: Build from Source
