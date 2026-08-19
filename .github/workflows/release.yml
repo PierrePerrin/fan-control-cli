@@ -1,0 +1,48 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build & Create Release
+    runs-on: macos-14
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Universal Binary
+        run: |
+          # Build arm64 & x86_64 binaries
+          swift build -c release --triple arm64-apple-macosx --disable-sandbox
+          swift build -c release --triple x86_64-apple-macosx --disable-sandbox
+          
+          # Combine into Universal binary (Apple Silicon + Intel)
+          mkdir -p bin
+          lipo -create -output bin/fancontrol \
+            .build/arm64-apple-macosx/release/fancontrol \
+            .build/x86_64-apple-macosx/release/fancontrol
+          
+          chmod +x bin/fancontrol
+
+          # Package release tarball
+          tar -czvf fancontrol-${{ github.ref_name }}.tar.gz -C bin fancontrol
+          
+          # Generate SHA256 checksum file
+          shasum -a 256 fancontrol-${{ github.ref_name }}.tar.gz > fancontrol-${{ github.ref_name }}.tar.gz.sha256
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            fancontrol-${{ github.ref_name }}.tar.gz
+            fancontrol-${{ github.ref_name }}.tar.gz.sha256
+          name: ${{ github.ref_name }}
+          generate_release_notes: true
+          draft: false
+          prerelease: false
