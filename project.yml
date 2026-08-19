@@ -1,0 +1,89 @@
+name: fan-control
+options:
+  bundleIdPrefix: com.fancontrol
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    SWIFT_VERSION: "5.0"
+    GENERATE_INFOPLIST_FILE: YES
+    CLANG_ENABLE_OBJC_ARC: YES
+    GCC_C_LANGUAGE_STANDARD: "gnu11"
+    SWIFT_INCLUDE_PATHS:
+      - "$(SRCROOT)/Sources/SMCBridge/include"
+    HEADER_SEARCH_PATHS:
+      - "$(SRCROOT)/Sources/SMCBridge/include"
+
+targets:
+  SMCBridge:
+    type: library.static
+    platform: macOS
+    sources:
+      - path: Sources/SMCBridge
+    settings:
+      base:
+        PUBLIC_HEADERS_FOLDER_PATH: include
+        HEADER_SEARCH_PATHS: "$(SRCROOT)/Sources/SMCBridge/include"
+        OTHER_LDFLAGS: "-framework IOKit -framework Foundation -framework CoreFoundation"
+    dependencies:
+      - sdk: IOKit.framework
+      - sdk: Foundation.framework
+      - sdk: CoreFoundation.framework
+
+  FanControlKit:
+    type: framework
+    platform: macOS
+    sources:
+      - path: Sources/FanControlKit
+    dependencies:
+      - target: SMCBridge
+        link: true
+      - sdk: IOKit.framework
+      - sdk: Foundation.framework
+      - sdk: CoreFoundation.framework
+    settings:
+      base:
+        DEFINES_MODULE: YES
+        OTHER_LDFLAGS: "-framework IOKit -framework Foundation -framework CoreFoundation"
+
+  fancontrol:
+    type: tool
+    platform: macOS
+    sources:
+      - path: Sources/fancontrol
+    dependencies:
+      - target: FanControlKit
+      - target: SMCBridge
+        link: true
+    settings:
+      base:
+        OTHER_LDFLAGS: "-framework IOKit -framework Foundation -framework CoreFoundation"
+
+  FanControlKitTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests/FanControlKitTests
+    dependencies:
+      - target: FanControlKit
+
+schemes:
+  FanControlKit:
+    build:
+      targets:
+        FanControlKit: all
+    test:
+      targets:
+        - FanControlKitTests
+  fancontrol:
+    build:
+      targets:
+        fancontrol: all
+        FanControlKit: all
+    test:
+      targets:
+        - FanControlKitTests

@@ -6,53 +6,309 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0DC780780293D92A4135D006 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA45CEEDDD17281BAF08E4 /* CoreFoundation.framework */; };
+		0EF6225447A70F97035DB375 /* JSONFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD67B8D9962136CF861D723 /* JSONFormatter.swift */; };
+		14301A8A514B0F347072615B /* WatchCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DFDE64B1AE21D8C1B9E5F /* WatchCommand.swift */; };
+		170B1746651CD92C7D41F68E /* FanCurveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA45ABFAA82604229E5FD96 /* FanCurveTests.swift */; };
+		1792DDE76030BE14391AE01B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD62A20120ADECA1D5791F /* main.swift */; };
+		2EE276C792D9BF445C6FFA7A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327BCA35D8F2539F3AC4FAA /* IOKit.framework */; };
+		3195C76492B06AB3EE86FE17 /* SMCKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FEAFA804A2A3FE59A435C9 /* SMCKeyTests.swift */; };
+		340B5F9AECD1AC874005E8B0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327BCA35D8F2539F3AC4FAA /* IOKit.framework */; };
+		366C476E095E68E952C88801 /* FanCurveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054F36190E3D9D0AC406CA7 /* FanCurveController.swift */; };
+		3FFD8A0E5E498AB785725560 /* libSMCBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F37A00768036B77F3BE7FCE /* libSMCBridge.a */; };
+		47278F7D4905FEB4AB5755F9 /* FanControlKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14638036F76C55004A3F137 /* FanControlKit.framework */; };
+		489E0536672D7F2B13FD8B66 /* SetCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6005E48EFBEE6EA747CF18E /* SetCommand.swift */; };
+		550D5E0B211BAC5730063296 /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51938DAD042A621FD063FD /* Fan.swift */; };
+		62DD3159E3F70569C18CB398 /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1E85871D3FEAB327EBF8458 /* module.modulemap */; };
+		69584047AF7696124EA79F0B /* AutoCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B37B099EE55A352B3D5AB /* AutoCommand.swift */; };
+		6B51CC795895F61986CF352B /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F0F522C61AFFAED556093 /* Sensor.swift */; };
+		7539B499FA8CAD15919592F1 /* DumpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848BE5A6D978A7AACD9732D8 /* DumpCommand.swift */; };
+		8354F8A12B803F1660233680 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA45CEEDDD17281BAF08E4 /* CoreFoundation.framework */; };
+		8EF6A09E996BBDE6AC960A17 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2A925BD1C832ACF794F2B9 /* SensorManager.swift */; };
+		94B68735A829F643A08027A6 /* libSMCBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F37A00768036B77F3BE7FCE /* libSMCBridge.a */; };
+		9734F1F2B4AF55D0F7502DAD /* CurveCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C294C1C6140F5549FF283 /* CurveCommand.swift */; };
+		A504846DD232B11AC18B858C /* FanControlKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14638036F76C55004A3F137 /* FanControlKit.framework */; };
+		A8685670481E622B3F6D776C /* HIDThermalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA27785EE59E87A77313F17 /* HIDThermalClient.swift */; };
+		ABEC94F1FA9C493B31EF0A0A /* SMCKeyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B947A05AA388DE70EDE9B7A1 /* SMCKeyHelper.swift */; };
+		BFF325B1F2FE986CDB6B2568 /* SensorsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE2E1F5BC2C230AB9D56B5 /* SensorsCommand.swift */; };
+		C96BC7C5B43C7057E974CAD2 /* SMCBridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF5488C4FEF14EB09836EF0A /* SMCBridge.h */; };
+		D74B6888A8E6E35B6EC52E61 /* FanControlKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A14638036F76C55004A3F137 /* FanControlKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAAA73A5F827929671DB2E91 /* TerminalUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F325A4B2165D39148352E1 /* TerminalUI.swift */; };
+		E4C13B70DABC0EC5D4F18C63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2C50AAE572C35064B0332D /* Foundation.framework */; };
+		E525BDCD94040CF8E35EF113 /* ThermalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3AEA01602C3BDDD629E7C3 /* ThermalState.swift */; };
+		E538A055F1F73F489B76F198 /* SMCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913D3AF64136FCA33156A24 /* SMCService.swift */; };
+		E7FAB9E2C7062864CD48E755 /* FanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F708BAC879F485CD1A66797 /* FanManager.swift */; };
+		EC284B7C310894D00947A598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2C50AAE572C35064B0332D /* Foundation.framework */; };
+		F50C78754F12C557F558D415 /* SMCBridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D445F04A2DEBF147A91153F /* SMCBridge.c */; };
+		F96920228885A32CA9A2E305 /* StatusCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B575173AAD7AF4B0725835 /* StatusCommand.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		398A62F72CE2E4C6FC5FC46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30CBBB7B3D2394A60365BC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC74CD776888107D5D0E2BC;
+			remoteInfo = FanControlKit;
+		};
+		B22A973D976430FE4C01B71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30CBBB7B3D2394A60365BC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34985FD4B8DCFBE20C5212FE;
+			remoteInfo = SMCBridge;
+		};
+		C1BD9DCD9D39DB8C64F11E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30CBBB7B3D2394A60365BC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC74CD776888107D5D0E2BC;
+			remoteInfo = FanControlKit;
+		};
+		E9B7575CD66539D0798A120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30CBBB7B3D2394A60365BC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34985FD4B8DCFBE20C5212FE;
+			remoteInfo = SMCBridge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		8F07B5DD3036421D00305E0B /* CopyFiles */ = {
+		73D8A966CBEA53A9D828C804 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				D74B6888A8E6E35B6EC52E61 /* FanControlKit.framework in Embed Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9F6A1BF543A4199AEF91C3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				C96BC7C5B43C7057E974CAD2 /* SMCBridge.h in CopyFiles */,
+				62DD3159E3F70569C18CB398 /* module.modulemap in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8F07B5DF3036421D00305E0B /* fan-control */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fan-control"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A51938DAD042A621FD063FD /* Fan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fan.swift; sourceTree = "<group>"; };
+		0E3AEA01602C3BDDD629E7C3 /* ThermalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalState.swift; sourceTree = "<group>"; };
+		13FEAFA804A2A3FE59A435C9 /* SMCKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCKeyTests.swift; sourceTree = "<group>"; };
+		1913D3AF64136FCA33156A24 /* SMCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCService.swift; sourceTree = "<group>"; };
+		1AD67B8D9962136CF861D723 /* JSONFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFormatter.swift; sourceTree = "<group>"; };
+		217DFDE64B1AE21D8C1B9E5F /* WatchCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCommand.swift; sourceTree = "<group>"; };
+		55B575173AAD7AF4B0725835 /* StatusCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCommand.swift; sourceTree = "<group>"; };
+		5D445F04A2DEBF147A91153F /* SMCBridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SMCBridge.c; sourceTree = "<group>"; };
+		5EA27785EE59E87A77313F17 /* HIDThermalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDThermalClient.swift; sourceTree = "<group>"; };
+		6E2A925BD1C832ACF794F2B9 /* SensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
+		6EA45ABFAA82604229E5FD96 /* FanCurveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanCurveTests.swift; sourceTree = "<group>"; };
+		716B37B099EE55A352B3D5AB /* AutoCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCommand.swift; sourceTree = "<group>"; };
+		74F325A4B2165D39148352E1 /* TerminalUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalUI.swift; sourceTree = "<group>"; };
+		7F708BAC879F485CD1A66797 /* FanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanManager.swift; sourceTree = "<group>"; };
+		81BA45CEEDDD17281BAF08E4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		848BE5A6D978A7AACD9732D8 /* DumpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpCommand.swift; sourceTree = "<group>"; };
+		84A56E0C6E588D3324EB756D /* fancontrol */ = {isa = PBXFileReference; includeInIndex = 0; path = fancontrol; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A483C7C6A8FF47F02671893 /* FanControlKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanControlKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F37A00768036B77F3BE7FCE /* libSMCBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMCBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9327BCA35D8F2539F3AC4FAA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		989C294C1C6140F5549FF283 /* CurveCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveCommand.swift; sourceTree = "<group>"; };
+		A14638036F76C55004A3F137 /* FanControlKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FanControlKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFE2E1F5BC2C230AB9D56B5 /* SensorsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsCommand.swift; sourceTree = "<group>"; };
+		AF5488C4FEF14EB09836EF0A /* SMCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCBridge.h; sourceTree = "<group>"; };
+		B947A05AA388DE70EDE9B7A1 /* SMCKeyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCKeyHelper.swift; sourceTree = "<group>"; };
+		C1E85871D3FEAB327EBF8458 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		CB2C50AAE572C35064B0332D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D054F36190E3D9D0AC406CA7 /* FanCurveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanCurveController.swift; sourceTree = "<group>"; };
+		DF8F0F522C61AFFAED556093 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		E6005E48EFBEE6EA747CF18E /* SetCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCommand.swift; sourceTree = "<group>"; };
+		F6FD62A20120ADECA1D5791F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		8F07B5E13036421D00305E0B /* fan-control */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "fan-control";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		8F07B5DC3036421D00305E0B /* Frameworks */ = {
+		44641CF57EBCA6498E329439 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47278F7D4905FEB4AB5755F9 /* FanControlKit.framework in Frameworks */,
+				3FFD8A0E5E498AB785725560 /* libSMCBridge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9297F7D76E06B585ADB13E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B68735A829F643A08027A6 /* libSMCBridge.a in Frameworks */,
+				2EE276C792D9BF445C6FFA7A /* IOKit.framework in Frameworks */,
+				E4C13B70DABC0EC5D4F18C63 /* Foundation.framework in Frameworks */,
+				8354F8A12B803F1660233680 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF788B49CB5F75956171B55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A504846DD232B11AC18B858C /* FanControlKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE836902513D81130AFF8DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340B5F9AECD1AC874005E8B0 /* IOKit.framework in Frameworks */,
+				EC284B7C310894D00947A598 /* Foundation.framework in Frameworks */,
+				0DC780780293D92A4135D006 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F07B5D63036421D00305E0B = {
+		171F74594AAF8323438A4571 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				8F07B5E13036421D00305E0B /* fan-control */,
-				8F07B5E03036421D00305E0B /* Products */,
+				C1E85871D3FEAB327EBF8458 /* module.modulemap */,
+				AF5488C4FEF14EB09836EF0A /* SMCBridge.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		22591AFA5372C0B966E8B327 /* FanControlKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EA45ABFAA82604229E5FD96 /* FanCurveTests.swift */,
+				13FEAFA804A2A3FE59A435C9 /* SMCKeyTests.swift */,
+			);
+			name = FanControlKitTests;
+			path = Tests/FanControlKitTests;
+			sourceTree = "<group>";
+		};
+		28136D71E6319F72934DCCDB /* SMCBridge */ = {
+			isa = PBXGroup;
+			children = (
+				5D445F04A2DEBF147A91153F /* SMCBridge.c */,
+				171F74594AAF8323438A4571 /* include */,
+			);
+			name = SMCBridge;
+			path = Sources/SMCBridge;
+			sourceTree = "<group>";
+		};
+		6658692211D00018F0C02260 /* fancontrol */ = {
+			isa = PBXGroup;
+			children = (
+				F6FD62A20120ADECA1D5791F /* main.swift */,
+				F164FBC913DDFD1587CC0E8E /* Commands */,
+				F8BED181AA56AD62AC4F5DD4 /* UI */,
+			);
+			name = fancontrol;
+			path = Sources/fancontrol;
+			sourceTree = "<group>";
+		};
+		8A1738F026EB333F58587F96 /* SMC */ = {
+			isa = PBXGroup;
+			children = (
+				B947A05AA388DE70EDE9B7A1 /* SMCKeyHelper.swift */,
+				1913D3AF64136FCA33156A24 /* SMCService.swift */,
+			);
+			path = SMC;
+			sourceTree = "<group>";
+		};
+		AD185616F553949B3F92F37F /* FanControlKit */ = {
+			isa = PBXGroup;
+			children = (
+				D054F36190E3D9D0AC406CA7 /* FanCurveController.swift */,
+				7F708BAC879F485CD1A66797 /* FanManager.swift */,
+				C8FCA2A5BDDACD0D28527467 /* Models */,
+				BEA51BC1B3F8DABFD1F07BF0 /* Sensors */,
+				8A1738F026EB333F58587F96 /* SMC */,
+			);
+			name = FanControlKit;
+			path = Sources/FanControlKit;
+			sourceTree = "<group>";
+		};
+		BEA51BC1B3F8DABFD1F07BF0 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				5EA27785EE59E87A77313F17 /* HIDThermalClient.swift */,
+				6E2A925BD1C832ACF794F2B9 /* SensorManager.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		C8FCA2A5BDDACD0D28527467 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A51938DAD042A621FD063FD /* Fan.swift */,
+				DF8F0F522C61AFFAED556093 /* Sensor.swift */,
+				0E3AEA01602C3BDDD629E7C3 /* ThermalState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC1B6F1DEC753FFF92C525E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81BA45CEEDDD17281BAF08E4 /* CoreFoundation.framework */,
+				CB2C50AAE572C35064B0332D /* Foundation.framework */,
+				9327BCA35D8F2539F3AC4FAA /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD3F6A83A47EEBF731C536E6 = {
+			isa = PBXGroup;
+			children = (
+				6658692211D00018F0C02260 /* fancontrol */,
+				AD185616F553949B3F92F37F /* FanControlKit */,
+				22591AFA5372C0B966E8B327 /* FanControlKitTests */,
+				28136D71E6319F72934DCCDB /* SMCBridge */,
+				CC1B6F1DEC753FFF92C525E4 /* Frameworks */,
+				F956AA21A7A9DD42A6FB9EFE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8F07B5E03036421D00305E0B /* Products */ = {
+		F164FBC913DDFD1587CC0E8E /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				8F07B5DF3036421D00305E0B /* fan-control */,
+				716B37B099EE55A352B3D5AB /* AutoCommand.swift */,
+				989C294C1C6140F5549FF283 /* CurveCommand.swift */,
+				848BE5A6D978A7AACD9732D8 /* DumpCommand.swift */,
+				AEFE2E1F5BC2C230AB9D56B5 /* SensorsCommand.swift */,
+				E6005E48EFBEE6EA747CF18E /* SetCommand.swift */,
+				55B575173AAD7AF4B0725835 /* StatusCommand.swift */,
+				217DFDE64B1AE21D8C1B9E5F /* WatchCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		F8BED181AA56AD62AC4F5DD4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1AD67B8D9962136CF861D723 /* JSONFormatter.swift */,
+				74F325A4B2165D39148352E1 /* TerminalUI.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F956AA21A7A9DD42A6FB9EFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A56E0C6E588D3324EB756D /* fancontrol */,
+				A14638036F76C55004A3F137 /* FanControlKit.framework */,
+				8A483C7C6A8FF47F02671893 /* FanControlKitTests.xctest */,
+				8F37A00768036B77F3BE7FCE /* libSMCBridge.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,145 +316,260 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F07B5DE3036421D00305E0B /* fan-control */ = {
+		34985FD4B8DCFBE20C5212FE /* SMCBridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F07B5E63036421D00305E0B /* Build configuration list for PBXNativeTarget "fan-control" */;
+			buildConfigurationList = 9E65047148A555BD660AB740 /* Build configuration list for PBXNativeTarget "SMCBridge" */;
 			buildPhases = (
-				8F07B5DB3036421D00305E0B /* Sources */,
-				8F07B5DC3036421D00305E0B /* Frameworks */,
-				8F07B5DD3036421D00305E0B /* CopyFiles */,
+				DE9F6A1BF543A4199AEF91C3 /* CopyFiles */,
+				68514798ACFA9DB94C422296 /* Sources */,
+				BAE836902513D81130AFF8DE /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				8F07B5E13036421D00305E0B /* fan-control */,
-			);
-			name = "fan-control";
+			name = SMCBridge;
 			packageProductDependencies = (
 			);
-			productName = "fan-control";
-			productReference = 8F07B5DF3036421D00305E0B /* fan-control */;
+			productName = SMCBridge;
+			productReference = 8F37A00768036B77F3BE7FCE /* libSMCBridge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BC74CD776888107D5D0E2BC /* FanControlKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17E3084EC29352250543565C /* Build configuration list for PBXNativeTarget "FanControlKit" */;
+			buildPhases = (
+				2FFA8199808FBDB86C8693D8 /* Sources */,
+				9297F7D76E06B585ADB13E71 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F0D1104C4F2AAA38557972A /* PBXTargetDependency */,
+			);
+			name = FanControlKit;
+			packageProductDependencies = (
+			);
+			productName = FanControlKit;
+			productReference = A14638036F76C55004A3F137 /* FanControlKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BFDCFFBED7C260207AE4A21 /* FanControlKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04D9F1291046D22DAA9E587 /* Build configuration list for PBXNativeTarget "FanControlKitTests" */;
+			buildPhases = (
+				9DA3342371D8F75B501D537A /* Sources */,
+				AF788B49CB5F75956171B55D /* Frameworks */,
+				73D8A966CBEA53A9D828C804 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDFAD32B18F5C0445062C6AF /* PBXTargetDependency */,
+			);
+			name = FanControlKitTests;
+			packageProductDependencies = (
+			);
+			productName = FanControlKitTests;
+			productReference = 8A483C7C6A8FF47F02671893 /* FanControlKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C18DB7F23415E43BFB724469 /* fancontrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ADAB333F5E59EE209FEC396 /* Build configuration list for PBXNativeTarget "fancontrol" */;
+			buildPhases = (
+				9D556A9E6BFA29244BD6D56C /* Sources */,
+				44641CF57EBCA6498E329439 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6920E67B6388A453A77CAE1 /* PBXTargetDependency */,
+				26B31330FCDED5EB9AACA9E5 /* PBXTargetDependency */,
+			);
+			name = fancontrol;
+			packageProductDependencies = (
+			);
+			productName = fancontrol;
+			productReference = 84A56E0C6E588D3324EB756D /* fancontrol */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8F07B5D73036421D00305E0B /* Project object */ = {
+		30CBBB7B3D2394A60365BC38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2650;
-				LastUpgradeCheck = 2650;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					8F07B5DE3036421D00305E0B = {
-						CreatedOnToolsVersion = 26.5;
-					};
 				};
 			};
-			buildConfigurationList = 8F07B5DA3036421D00305E0B /* Build configuration list for PBXProject "fan-control" */;
+			buildConfigurationList = A527E0E8CA7E6F062C974748 /* Build configuration list for PBXProject "fan-control" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 8F07B5D63036421D00305E0B;
+			mainGroup = CD3F6A83A47EEBF731C536E6;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8F07B5E03036421D00305E0B /* Products */;
+			productRefGroup = F956AA21A7A9DD42A6FB9EFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F07B5DE3036421D00305E0B /* fan-control */,
+				34985FD4B8DCFBE20C5212FE /* SMCBridge */,
+				7BC74CD776888107D5D0E2BC /* FanControlKit */,
+				C18DB7F23415E43BFB724469 /* fancontrol */,
+				7BFDCFFBED7C260207AE4A21 /* FanControlKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8F07B5DB3036421D00305E0B /* Sources */ = {
+		2FFA8199808FBDB86C8693D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550D5E0B211BAC5730063296 /* Fan.swift in Sources */,
+				366C476E095E68E952C88801 /* FanCurveController.swift in Sources */,
+				E7FAB9E2C7062864CD48E755 /* FanManager.swift in Sources */,
+				A8685670481E622B3F6D776C /* HIDThermalClient.swift in Sources */,
+				ABEC94F1FA9C493B31EF0A0A /* SMCKeyHelper.swift in Sources */,
+				E538A055F1F73F489B76F198 /* SMCService.swift in Sources */,
+				6B51CC795895F61986CF352B /* Sensor.swift in Sources */,
+				8EF6A09E996BBDE6AC960A17 /* SensorManager.swift in Sources */,
+				E525BDCD94040CF8E35EF113 /* ThermalState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68514798ACFA9DB94C422296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50C78754F12C557F558D415 /* SMCBridge.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D556A9E6BFA29244BD6D56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69584047AF7696124EA79F0B /* AutoCommand.swift in Sources */,
+				9734F1F2B4AF55D0F7502DAD /* CurveCommand.swift in Sources */,
+				7539B499FA8CAD15919592F1 /* DumpCommand.swift in Sources */,
+				0EF6225447A70F97035DB375 /* JSONFormatter.swift in Sources */,
+				BFF325B1F2FE986CDB6B2568 /* SensorsCommand.swift in Sources */,
+				489E0536672D7F2B13FD8B66 /* SetCommand.swift in Sources */,
+				F96920228885A32CA9A2E305 /* StatusCommand.swift in Sources */,
+				DAAA73A5F827929671DB2E91 /* TerminalUI.swift in Sources */,
+				14301A8A514B0F347072615B /* WatchCommand.swift in Sources */,
+				1792DDE76030BE14391AE01B /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA3342371D8F75B501D537A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170B1746651CD92C7D41F68E /* FanCurveTests.swift in Sources */,
+				3195C76492B06AB3EE86FE17 /* SMCKeyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		26B31330FCDED5EB9AACA9E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34985FD4B8DCFBE20C5212FE /* SMCBridge */;
+			targetProxy = B22A973D976430FE4C01B71C /* PBXContainerItemProxy */;
+		};
+		4F0D1104C4F2AAA38557972A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34985FD4B8DCFBE20C5212FE /* SMCBridge */;
+			targetProxy = E9B7575CD66539D0798A120E /* PBXContainerItemProxy */;
+		};
+		CDFAD32B18F5C0445062C6AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC74CD776888107D5D0E2BC /* FanControlKit */;
+			targetProxy = 398A62F72CE2E4C6FC5FC46F /* PBXContainerItemProxy */;
+		};
+		F6920E67B6388A453A77CAE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC74CD776888107D5D0E2BC /* FanControlKit */;
+			targetProxy = C1BD9DCD9D39DB8C64F11E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		8F07B5E43036421D00305E0B /* Debug */ = {
+		034BE154CD87DD310AD2ACAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = PCKYQNTV3N;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/../Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework IOKit -framework Foundation -framework CoreFoundation",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.FanControlKit;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2BD12716E76238F280C90F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Sources/SMCBridge/include";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = "-framework IOKit -framework Foundation -framework CoreFoundation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.SMCBridge;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		8F07B5E53036421D00305E0B /* Release */ = {
+		70037FAAAFE47B8DB284126E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.FanControlKitTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		89C05D6F3388FAF345CDF80D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -226,11 +597,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = PCKYQNTV3N;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -238,63 +607,235 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources/SMCBridge/include",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = (
+					"$(SRCROOT)/Sources/SMCBridge/include",
+				);
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		8F07B5E73036421D00305E0B /* Debug */ = {
+		A48E761F63591AF074988DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PCKYQNTV3N;
-				ENABLE_HARDENED_RUNTIME = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework IOKit -framework Foundation -framework CoreFoundation",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.fancontrol;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ADE9420F4A315526EE57269B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework IOKit -framework Foundation -framework CoreFoundation",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.FanControlKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		B0B45B1264A843C79E3F1ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Sources/SMCBridge/include";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = "-framework IOKit -framework Foundation -framework CoreFoundation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.SMCBridge;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BD48589FD9062D098D44B2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.FanControlKitTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C6E2F09DCE50469C46326628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources/SMCBridge/include",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = (
+					"$(SRCROOT)/Sources/SMCBridge/include",
+				);
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		8F07B5E83036421D00305E0B /* Release */ = {
+		CE8D4DBA5A99D1CE75C8C592 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PCKYQNTV3N;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework IOKit -framework Foundation -framework CoreFoundation",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fancontrol.fancontrol;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F07B5DA3036421D00305E0B /* Build configuration list for PBXProject "fan-control" */ = {
+		17E3084EC29352250543565C /* Build configuration list for PBXNativeTarget "FanControlKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F07B5E43036421D00305E0B /* Debug */,
-				8F07B5E53036421D00305E0B /* Release */,
+				ADE9420F4A315526EE57269B /* Debug */,
+				034BE154CD87DD310AD2ACAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		8F07B5E63036421D00305E0B /* Build configuration list for PBXNativeTarget "fan-control" */ = {
+		7ADAB333F5E59EE209FEC396 /* Build configuration list for PBXNativeTarget "fancontrol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F07B5E73036421D00305E0B /* Debug */,
-				8F07B5E83036421D00305E0B /* Release */,
+				A48E761F63591AF074988DD5 /* Debug */,
+				CE8D4DBA5A99D1CE75C8C592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		9E65047148A555BD660AB740 /* Build configuration list for PBXNativeTarget "SMCBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD12716E76238F280C90F94 /* Debug */,
+				B0B45B1264A843C79E3F1ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A04D9F1291046D22DAA9E587 /* Build configuration list for PBXNativeTarget "FanControlKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70037FAAAFE47B8DB284126E /* Debug */,
+				BD48589FD9062D098D44B2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A527E0E8CA7E6F062C974748 /* Build configuration list for PBXProject "fan-control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E2F09DCE50469C46326628 /* Debug */,
+				89C05D6F3388FAF345CDF80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8F07B5D73036421D00305E0B /* Project object */;
+	rootObject = 30CBBB7B3D2394A60365BC38 /* Project object */;
 }
